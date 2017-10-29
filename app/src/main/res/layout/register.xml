@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/headerActivityRegister"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Registro"
+        android:theme="@style/AppTheme.ToolbarStyle">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre"
+            android:hint="Nombre                                              "
+            android:layout_alignParentStart="false"
+            android:layout_above="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:autoText="false" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="Primer apellido"
+            android:layout_above="@+id/editText2"
+            android:layout_alignEnd="@+id/nombre"
+            android:layout_alignStart="@+id/nombre" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:hint="Segundo Apellido"
+            android:layout_above="@+id/editText3"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignEnd="@+id/editText" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:hint="Edad"
+            android:layout_above="@+id/editText4"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:hint="Peso"
+            android:layout_above="@+id/editText5"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_alignEnd="@+id/editText3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText5"
+            android:hint="Estatura"
+            android:layout_above="@+id/editText6"
+            android:layout_alignEnd="@+id/editText4"
+            android:layout_alignStart="@+id/editText4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:hint="Tipo de sangre"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="85dp"
+            android:layout_alignEnd="@+id/editText5"
+            android:layout_alignStart="@+id/editText5" />
+    </RelativeLayout>
+
+</LinearLayout>
