@@ -88,17 +88,12 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
         Fragment fragment = null;
         Class fragmentClass = null;
-        if (id == R.id.nav_camera) {
+        if (id == R.id.treatement) {
             fragmentClass = Profile.class;
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.medicines) {
             fragmentClass = Medicines.class;
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.patients) {
             fragmentClass = AddTreatements.class;
-        } else if (id == R.id.nav_manage) {
-        } else if (id == R.id.nav_share) {
-            fragmentClass = Profile.class;
-        } else if (id == R.id.nav_send) {
-
         }
         try {
             fragment = (Fragment) fragmentClass.newInstance();
